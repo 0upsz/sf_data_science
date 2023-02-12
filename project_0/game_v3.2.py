@@ -27,6 +27,7 @@ def middle_predict(number:int=1) -> int:
         elif number == middle: # условие выхода из цикла
             break
     return count
+
     
 def score_game(middle_predict) -> int:
     """Определяет за сколько в среднем попыток компьютер угадывает 1000 чисел
