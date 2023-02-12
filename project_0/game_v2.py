@@ -23,7 +23,9 @@ def random_predict(number:int=1) -> int:
     return(count)
 
 def score_game(random_predict) -> int:
-      """Функция оценивает за сколько попыток в среднем испытываемая функция отгадывает число
+
+
+    """Функция оценивает за сколько попыток в среднем испытываемая функция отгадывает число
 
     Args:
         random_predict (func): Функция угадывания
@@ -31,11 +33,11 @@ def score_game(random_predict) -> int:
     Returns:
         int: среднее количество попыток
     """
-    
-    count_ls = [] #создаем список, в котором будут сохранены количества попыток, с которых получилось отгадать число
+
+    count_ls = [] # создаем список, в котором будут сохранены количества попыток, с которых получилось отгадать число
     np.random.seed(1)
     random_array = np.random.randint(1, 101, size=1000) #создаем фиксированный список из 1000 чисел от 1 до 100
-    
+
     for number in random_array:
         count_ls.append(random_predict(number))
         

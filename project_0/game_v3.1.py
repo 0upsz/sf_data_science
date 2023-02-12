@@ -8,8 +8,8 @@ def half_predict(number:int=1) -> int:
         int: Число попыток 
     """
     
-    count = 0 #количество попыток
-    number_for_operations = 50      # число для увеличения или уменьшения диапазона
+    count = 0 # количество попыток
+    number_for_operations = 50 # число для увеличения или уменьшения диапазона
     middle = 50 # число, которое ограничивает диапазон угалываемых чисел
     
     while True:
@@ -40,7 +40,7 @@ def score_game(half_predict) -> int:
         int: сколько попыток 
     """
     import numpy as np
-    score_list=[] #список с количеством попыток
+    score_list=[] # список с количеством попыток
     np.random.seed(3)
     random_array=np.random.randint(1,100, size=1000) # список с 1000 числами
     
@@ -48,7 +48,7 @@ def score_game(half_predict) -> int:
         score_list.append(half_predict(number))
     score=int(np.mean(score_list))
     
-    print(f'Функция угадывает каждое из 1000 чисел в среднем за {score} раз')
+    print(f'Ваш алгоритм в среднем угадывает число за {score} попыток')
     return score
 
 score_game(half_predict)
