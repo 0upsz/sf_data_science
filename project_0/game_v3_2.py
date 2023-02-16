@@ -9,23 +9,28 @@ def middle_predict(number:int=1) -> int:
     """
     
     count = 0 # вводим счетчик
-    a = 0 # левая граница диапазона загадываемого числа
-    b = 101 # правая граница диапазона загадываемого числа
-    middle = (a+b)//2 # ередина диапазона, округляется до целого значения до запятой
+    left_bound = 0 # левая граница диапазона загадываемого числа
+    right_bound = 101 # правая граница диапазона загадываемого числа
+    middle = (left_bound + right_bound) // 2 # ередина диапазона, округляется до целого значения до запятой
     
     while True: # вход в цикл и последовательное уменьшения краев диапазона до момента, когда загаданное число совпадет с серединой диапазона
         count+=1
         
         if number < middle:
-            b=middle
-            middle = (a+b)//2
+            right_bound = middle
+            middle = (left_bound + right_bound) // 2
             
         elif number > middle:
-            a=middle   
-            middle = (a+b)//2  
+            left_bound = middle   
+            middle = (left_bound + right_bound) // 2  
             
         elif number == middle: # условие выхода из цикла
             break
+        
+        # выход из цикла, если что-то пойдет не так
+        if count > 50:
+            break
+        
     return count
 
     
@@ -44,10 +49,13 @@ def score_game(middle_predict) -> int:
     np.random.seed(1)
     random_array = np.random.randint(1, 101, size =(1000)) # создаем массив из 1000 загаданных чисел 
     
+    
     for number in random_array:
         count_ls.append(middle_predict(number))
         score = int(np.mean(count_ls))
-    print(f'Ваш алгоритм в среднем угадывает число за {score} попыток')
+    return score
+
+print(f'Ваш алгоритм в среднем угадывает число за {score_game(middle_predict)} попыток')
 
 #RUN    
 score_game(middle_predict)
