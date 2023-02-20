@@ -20,6 +20,7 @@
 
 ### Краткая информация о данных
 Исходный датасет с данными по вакансиям можно скачать [здесь](https://drive.google.com/file/d/1yR9aL4yMsTXF8dKOzg-TV4T_Jz0I5xt6/view?usp=share_link) 
+
 Также в проекте используется файл с данными о курсах валют в исследуемые даты: (директория data/ExchangeRates.csv)
 
 :arrow_up:[к оглавлению](https://github.com/0upsz/sf_data_science/blob/master/project_1/README.md#Оглавление)
