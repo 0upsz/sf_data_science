@@ -1,4 +1,4 @@
-# Проект 1. Анализ вакансий с Head Hunter (SQL)
+# Проект 2. Анализ вакансий с Head Hunter (SQL)
 ## Оглавление
 * [1. Описание проекта](https://github.com/0upsz/sf_data_science/blob/master/project_2/README.md#Описание-проекта)
 * [2. Цель проекта](https://github.com/0upsz/sf_data_science/blob/master/project_2/README.md#Цель-проекта)
