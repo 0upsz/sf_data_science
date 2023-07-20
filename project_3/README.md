@@ -1,4 +1,9 @@
 # Проект 3. Анализ отзывов на Booking.com + соревнование kaggle
+
+Изначально работа выполнялась на личном ПК и на kaggle загружался только финальный submission-файл
+
+[Ссылка на kaggle](https://github.com/0upsz/sf_data_science/blob/master/project_3/README.md#Описание-проекта) предоставлена для удобства, но из-за долгого выполнения сам блокнот на Kaggle не запускался, поэтому отсутствует output файл
+
 ## Оглавление
 * [1. Описание проекта](https://github.com/0upsz/sf_data_science/blob/master/project_3/README.md#Описание-проекта)
 * [2. Краткая информация о данных](https://github.com/0upsz/sf_data_science/blob/master/project_3/README.md#Краткая-информация-о-данных)
