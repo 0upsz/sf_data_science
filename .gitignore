@@ -10,6 +10,10 @@ __pycache__/
 *$py.class
 #тестовый hotels
 hotels_train.csv
+# теория проект 3
+Теория_проект 3.ipynb
+# модель проект 3
+Модель_Project_3.ipynb
 
 # C extensions
 *.so
