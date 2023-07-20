@@ -2,7 +2,7 @@
 
 Изначально работа выполнялась на личном ПК и на kaggle загружался только финальный submission-файл
 
-[Ссылка на kaggle](https://github.com/0upsz/sf_data_science/blob/master/project_3/README.md#Описание-проекта) предоставлена для удобства, но из-за долгого выполнения сам блокнот на Kaggle не запускался, поэтому отсутствует output файл
+[Ссылка на kaggle](https://www.kaggle.com/alekseikirillin/aleksei-k-booking/edit) предоставлена для удобства, но из-за долгого выполнения сам блокнот на Kaggle не запускался, поэтому отсутствует output файл
 
 ## Оглавление
 * [1. Описание проекта](https://github.com/0upsz/sf_data_science/blob/master/project_3/README.md#Описание-проекта)
