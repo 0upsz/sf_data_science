@@ -8,6 +8,8 @@ hh_data.csv
 __pycache__/
 *.py[cod]
 *$py.class
+#тестовый hotels
+hotels_train.csv
 
 # C extensions
 *.so
